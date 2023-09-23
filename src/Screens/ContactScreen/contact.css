@@ -1,0 +1,307 @@
+#contact-container {
+    display: flex;
+    padding: 0vw 15vw;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    background: #150E28;
+    border-top: 1px solid #150E28;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -1px;
+    position: relative;
+    z-index: 20;
+}
+
+#contact-container .navbar-container,
+#contact-container .navbar-container2 {
+    position: absolute;
+    top: 0%;
+    padding: 0;
+    width: 80%;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: none;
+}
+
+.stars,
+.flares {
+    position: absolute;
+}
+
+.flare1 {
+    width: 40vw;
+    top: 0%;
+    left: 0;
+    opacity: .6;
+}
+
+.flare2 {
+    width: 45vw;
+    bottom: -40%;
+    right: 0;
+    opacity: .6;
+    transform: rotateZ(180deg);
+}
+
+.star1 {
+    width: .4em;
+    top: 15%;
+}
+
+.star2 {
+    width: .5em;
+    top: 12%;
+    right: 17%;
+}
+
+.star3 {
+    width: .6em;
+    bottom: 23%;
+    left: 45%;
+}
+
+.star4 {
+    width: .5em;
+    bottom: 13%;
+    right: 10%;
+}
+
+.stars img,
+.flares img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-container .text-stn {
+    max-width: 25vw;
+}
+
+.contact-container .text-stn h3 {
+    color: #D434FE;
+    font-family: 'ClashDisplay';
+    font-size: .8em;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.contact-container .text-stn p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: .4em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 50%;
+}
+
+.contact-container #full-width {
+    width: 100%;
+}
+
+#grouped {
+    font-size: 1em;
+    width: 100%;
+}
+
+#grouped p {
+    width: 100%;
+    margin: 0;
+}
+
+.contact-container .text-stn #colored {
+    color: #D434FE;
+}
+
+.contact-container .text-stn .socials {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact-container .form-stn {
+    width: 39vw;
+    padding: 3vw 6vw;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10;
+    margin-bottom: -7vw;
+}
+
+.contact-container .form-stn p {
+    color: #D434FE;
+    font-family: 'ClashDisplay';
+    font-size: .6em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-container .form-stn input {
+    width: 100%;
+    height: 5vh;
+    color: white;
+    font-family: Montserrat;
+    padding: .4vh 2vw;
+    margin-bottom: 2vh;
+    border-radius: 4px;
+    border: .05em solid #FFF;
+    outline: none;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact-containe .form-stn input::placeholder,
+.contact-container .form-stn textarea::placeholder {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: .8em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-container .form-stn textarea {
+    max-width: 100%;
+    padding: 1vh 2vh;
+    min-height: 15vh;
+    max-height: 25vh;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact-container .form-stn button {
+    border-radius: 4px;
+    text-align: center;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    /* width: em; */
+    padding: 1em 2.5em;
+    display: flex;
+    margin: auto;
+    margin-top: 2vh;
+    font-size: .4em;
+    color: #FFF;
+    font-family: Montserrat;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.socials-mobile-view,
+#weird-text,
+.back-button {
+    display: none;
+}
+/* mobile view */
+@media (max-width: 890px) {
+    #contact-container {
+        display: flex;
+        padding: 0vw 5vw;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        overflow: hidden;
+    }
+
+    #contact-container .navbar-container,
+    #contact-container .navbar-container2 {
+        display: none;
+    }
+
+    .contact-container .text-stn {
+        display: none;
+    }
+
+    .contact-container .form-stn {
+        width: 80vw;
+        padding: 10vw;
+        border-radius: 12px;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .form-stn p {
+        margin: 0;
+    }
+
+    .socials-mobile-view {
+        position: absolute;
+        display: block;
+        bottom: 5%;
+        margin: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .socials-mobile-view p {
+        font-size: .4em;
+        margin: 0;
+        text-align: center;
+        color: #D434FE;
+    }
+
+    .socials-mobile-view .svg-wrapper {
+        display: flex;
+        align-items: center;
+        gap: .3em;
+    }
+    .back-button {
+        display: block;
+        position: absolute;
+        top: 7%;
+        left: 17vw;
+    }
+
+    #weird-text {
+        display: block;
+        font-size: .3em;
+        color: #FFF;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 3vh 0;
+    }
+
+    .form-stn input {
+        width: 100%;
+        height: 5vh;
+        padding: .4vh 4vw;
+        margin-bottom: 10vh;
+    }
+
+    .form-stn input::placeholder,
+    .form-stn textarea::placeholder {
+        color: #FFF;
+        font-family: Montserrat;
+        /* font-size: 16px; */
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .form-stn textarea {
+        width: 100%;
+        min-height: 20vh;
+    }
+
+    .form-stn button {
+        border-radius: 4px;
+        background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+        /* width: em; */
+        /* font-size: ; */
+        color: #FFF;
+        font-family: Montserrat;
+        border: none;
+        outline: none;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
