@@ -18,6 +18,7 @@ import { useState } from 'react';
 import Lenis from '@studio-freight/lenis';
 
 function App() {
+  // handling the cursor interaction with links, across all components
   const [curse, setCurse] = useState(false);
   const updateCurse = () => {
     setCurse(true);
@@ -25,13 +26,13 @@ function App() {
   const updateLeave = () => {
     setCurse(false);
   }
+  // Initializing lenis smooth scroll
   const lenis = new Lenis();
 
   lenis.on('scroll', (e) => {
     // console.log(e)
     // maybe set duration and easing
   })
-
   function raf(time) {
     lenis.raf(time)
     requestAnimationFrame(raf)
@@ -50,6 +51,7 @@ function App() {
           <Home
             updateCurse={updateCurse}
             updateLeave={updateLeave}
+            // update curse and update leave are props handling animated cursor interactivity
           />
         } />
         <Route path='/contact' element={
@@ -69,6 +71,7 @@ function App() {
   )
   return (
     <div className="App">
+    {/* animated cursor component */}
       <Cursor curse={curse} />
       <RouterProvider router={router} />
     </div>

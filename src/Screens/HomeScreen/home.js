@@ -31,8 +31,9 @@ import Privacy from "../../components/privacy-stn/privacy";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 const Home = ({ updateCurse, updateLeave }) => {
+    // animating the glowing ball
     useEffect(()=> {
-        gsap.to(".glow-ball-img-wrapper", {
+        gsap.to(".glow-ball-img-wrapper:not(.exclude-from-animation)", {
             scale: 1.15,
             duration: .5,
             ease: "power2.inOut",

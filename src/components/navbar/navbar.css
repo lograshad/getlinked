@@ -96,7 +96,6 @@
         position: fixed;
         height: 100vh;
         width: 100vw;
-        /* background: #150E28; */
         backdrop-filter: blur(30px);
         display: block;
         z-index: 20;
@@ -106,7 +105,6 @@
         justify-content: center;
         flex-direction: column;
         align-items: flex-start;
-        /* width: 716px; */
         height: max-content;
         gap: 3vh;
         margin-left: 0;
@@ -132,6 +130,5 @@
     }
     .svg-wrapper {
         display: block;
-        /* for now */
     }
 }

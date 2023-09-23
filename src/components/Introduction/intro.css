@@ -37,7 +37,6 @@
 #arrow {
     top: 25rem;
     left: 45%;
-    /* width: 1.5rem; */
 }
 
 .introduction-container .text-section {
@@ -85,5 +84,4 @@
     position: absolute;
     top: 47%;
     left: 26.5%;
-    /* 29.4px */
 }

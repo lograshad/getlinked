@@ -13,14 +13,14 @@ const NavBar = ({updateCurse, updateLeave}) => {
                 showNav(true);
             }
         }
-        // Attach the event listener for window resize
+        // for attaching the event listener for window resize
         window.addEventListener('resize', handleResize);
         // Call handleResize initially
         handleResize();
 
         // Clean up the event listener when the component unmounts
         return () => {
-            // window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', handleResize);
         };
     }, [])
     return (
@@ -29,19 +29,19 @@ const NavBar = ({updateCurse, updateLeave}) => {
             <div className={nav ? ("hide-brand-name") : ("brand-name")}>get<span id="colored">linked</span></div>
             <div className="nav-items">
                 <ul className='desktop-nav' >
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>Timeline</Link></li>
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>Overview</Link></li>
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>FAQs</Link></li>
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/contact'>Contact</Link></li>
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register'>Register</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">Timeline</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">Overview</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">FAQs</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/contact' className="exclude-from-animation">Contact</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register' className="exclude-from-animation">Register</Link></li>
                 </ul>
                 {nav &&
                     <ul className='mobile-nav' >
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>Timeline</Link></li>
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>Overview</Link></li>
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>FAQs</Link></li>
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/contact'>Contact</Link></li>
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register'>Register</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">Timeline</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">Overview</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">FAQs</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/contact' className="exclude-from-animation">Contact</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register' className="exclude-from-animation">Register</Link></li>
                     </ul>
                 }
             </div>

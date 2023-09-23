@@ -30,6 +30,7 @@ const RegisterPage = ({updateCurse, updateLeave}) => {
 
     const handleSubmit = () => {
         updateLeave();
+        // collating group_size as a numeric value
         let num = parseInt(group_size);
         dispatch(registerUser({
             email: `${email}`,
@@ -41,6 +42,9 @@ const RegisterPage = ({updateCurse, updateLeave}) => {
             privacy_poclicy_accepted: privacy_policy_accepted,
         }))
     }
+
+
+    // collecting the category state through props from child component
     const handleDataFromChild = (data) => {
         setCategory(data);
     }

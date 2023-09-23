@@ -4,9 +4,20 @@ import star1 from "../../images/star1.svg";
 import star2 from "../../images/star2.svg";
 import "./faq.css";
 import manthinking from "../../images/manthinking.png";
+import {useEffect} from "react";
+import {gsap} from "gsap";
 
 
 const Faqs = () => {
+    useEffect(()=> {
+        gsap.to(".illustration", {
+            y: "5%",
+            duration: .5,
+            ease: "power2.inOut",
+            repeat: -1,
+            yoyo: true,
+        })
+    })
     return (
         <section className="FAQs-stn">
             <div className="stars"><img src={star5} alt="shining star" /></div>

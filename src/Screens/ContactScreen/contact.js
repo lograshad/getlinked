@@ -16,7 +16,7 @@ const ContactPage = ({updateCurse, updateLeave}) => {
     const [first_name, setFirst_name] = useState('');
     const [message, setMessage] = useState('');
     const dispatch = useDispatch();
-
+    // submittng the form
     const handleSubmit = () => {
         updateLeave();
         dispatch(submitContactForm({
