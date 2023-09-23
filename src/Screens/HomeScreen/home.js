@@ -34,10 +34,13 @@ import winwise from "../../images/winwise.png";
 import wisper from "../../images/wisper.png";
 import matrix from "../../images/matrix.png";
 import Privacy from "../../components/privacy-stn/privacy";
-const Home = () => {
+const Home = ({ updateCurse, updateLeave }) => {
     return (
         <div className="home-container">
-            <NavBar />
+            <NavBar
+                updateCurse={updateCurse}
+                updateLeave={updateLeave}
+            />
             <div className="hero-container-wrapper">
                 <div className="purpleLens1">
                     <img src={purpleLens} alt="purple lens" />
@@ -60,7 +63,7 @@ const Home = () => {
                             <span><img src={chain} alt="chain emoji" /></span><span><img src={spark} alt="spark emoji" /></span>
                         </div></h2>
                         <p>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
-                        <div className="button"><Link>Register</Link></div>
+                        <div className="button" onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register'>Register</Link></div>
                         <div className="countdown-timer">
                             <div>00<span>h</span></div>
                             <div>00<span>m</span></div>
@@ -80,14 +83,14 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Intro/>
-            <Rules/>
-            <Key/>
-            <Faqs/>
-            <Timeline/>
-            <Prizestn/>
-            <Sponsor/>
-            <Privacy/>
+            <Intro />
+            <Rules />
+            <Key />
+            <Faqs />
+            <Timeline />
+            <Prizestn />
+            <Sponsor />
+            <Privacy />
             <footer>
                 <div className="stars star29"><img src={star1} alt="star" /></div>
                 <div className="stars star30"><img src={star2} alt="star" /></div>

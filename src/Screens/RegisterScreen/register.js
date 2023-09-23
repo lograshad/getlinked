@@ -14,7 +14,7 @@ import { useEffect, useState } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import { fetchCategoryList, registerUser } from '../../actions/registerActions';
 
-const RegisterPage = () => {
+const RegisterPage = ({updateCurse, updateLeave}) => {
     const dispatch = useDispatch();
     useEffect(()=> {
         dispatch(fetchCategoryList());
@@ -29,6 +29,7 @@ const RegisterPage = () => {
     const [privacy_policy_accepted, setPrivacy_policy_accepted] = useState(false);
 
     const handleSubmit = () => {
+        updateLeave();
         let num = parseInt(group_size);
         dispatch(registerUser({
             email: `${email}`,
@@ -45,7 +46,10 @@ const RegisterPage = () => {
     }
     return (
         <div className="register-container" id='register-container'>
-            <NavBar />
+            <NavBar 
+                updateCurse={updateCurse}
+                updateLeave={updateLeave}
+            />
             <div className="stars star1"><img src={star4} alt="star" /></div>
             <div className="stars star2"><img src={star2} alt="star" /></div>
             <div className="stars star3"><img src={star2} alt="star" /></div>
@@ -88,7 +92,7 @@ const RegisterPage = () => {
                     </p>
                 </form>
                 {/* input depends on backend */}
-                <button onClick={handleSubmit}>Register Now</button>
+                <button onClick={handleSubmit} onMouseOver={updateCurse} onMouseLeave={updateLeave}>Register Now</button>
             </div>
         </div>
     )

@@ -30,24 +30,16 @@ reportWebVitals();
 // cursor animation
 // add music
 // press a key anywhere to contact
-// duplicate one flare
 // delete, cleanup unwanted files, like fonts images and stuff
 // button interactivity
 // stop highlight on text
-// ask daniel about extracting the flair
 // add ellipse to that babes head and remove the second one
 // web title and picture
-// change padding horizontal to vw
 // carefully crosscheck one by one
 // comment code and uncomment
-// use schema
-// redux
-// group into components
 // bounce man on cloud
 // position stars, glowball and flares to responsiveness 
-// navbar
 // page load on image download
-// navbar fixed
 // navbar links interactivity
 // fix brand name issue with gsap
 // fix text area

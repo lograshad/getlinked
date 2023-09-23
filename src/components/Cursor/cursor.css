@@ -13,8 +13,8 @@
     margin-top: -10px;
 }
 .lin {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     /* opacity: 60% !important; */
     z-index: 99;
     /* transition: 0.2s;
@@ -24,8 +24,7 @@
     pointer-events: none;
     position: absolute;
     border-radius: 50%;
-    opacity: .6;
-    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    background: linear-gradient(270deg, rgb(144, 58, 255, .6) 0%, rgb(212, 52, 254, .6) 56.42%, rgb(255, 38, 185, .6) 99.99%, rgb(254, 52, 185, .6) 100%);
 }
 
 @media screen and (max-width: 1023px) {

@@ -4,7 +4,7 @@ import star5 from "../../images/star5.svg";
 import purpleflare5 from "../../images/purpleflare5.png";
 import purpleflare6 from "../../images/purpleflare6.png";
 import manandwoman from "../../images/manandwoman.png";
-
+import "./key-atrr.css";
 const Key = () => {
     return (
         <section className="key-attr-container">

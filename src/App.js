@@ -38,8 +38,18 @@ function App() {
             updateLeave={updateLeave}
           />
         } />
-        <Route path='/contact' element={<ContactPage />} />
-        <Route path='/register' element={<RegisterPage />} />
+        <Route path='/contact' element={
+          <ContactPage
+            updateCurse={updateCurse}
+            updateLeave={updateLeave}
+          />
+        } />
+        <Route path='/register' element={
+          <RegisterPage
+            updateCurse={updateCurse}
+            updateLeave={updateLeave}
+          />
+        } />
       </Route>
     )
   )

@@ -10,7 +10,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {submitContactForm}from '../../actions/contactActions'
 
-const ContactPage = () => {
+const ContactPage = ({updateCurse, updateLeave}) => {
     const [email, setEmail] = useState('');
     const [phone_number, setPhone_number] = useState('');
     const [first_name, setFirst_name] = useState('');
@@ -18,6 +18,7 @@ const ContactPage = () => {
     const dispatch = useDispatch();
 
     const handleSubmit = () => {
+        updateLeave();
         dispatch(submitContactForm({
             email: email,
             phone_number: phone_number,
@@ -27,7 +28,10 @@ const ContactPage = () => {
     }
     return (
         <div className="contact-container" id='contact-container'>
-            <NavBar />
+            <NavBar 
+                updateCurse={updateCurse}
+                updateLeave={updateLeave}
+            />
             <div className="stars star1"><img src={star4} alt="star" /></div>
             <div className="stars star2"><img src={star2} alt="star" /></div>
             <div className="stars star3"><img src={star4} alt="star" /></div>
@@ -71,7 +75,7 @@ const ContactPage = () => {
                 <input required placeHolder='Mail' onChange={(e) => { setEmail(e.target.value) }} />
                 <input  required type='number' placeHolder='Phone Number' onChange={(e) => { setPhone_number(e.target.value) }} />
                 <textarea required placeHolder="Message" onChange={(e) => { setMessage(e.target.value) }} />
-                <button onClick={handleSubmit}>Submit</button>
+                <button onClick={handleSubmit} onMouseOver={updateCurse} onMouseLeave={updateLeave}>Submit</button>
             </div>
             <p className="socials-mobile-view">
                 <p id="colored">Share on</p>

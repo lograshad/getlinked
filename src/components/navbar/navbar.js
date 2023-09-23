@@ -2,7 +2,7 @@ import "./navbar.css";
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-const NavBar = () => {
+const NavBar = ({updateCurse, updateLeave}) => {
     const [nav, showNav] = useState(false);
     // useEffect to check resize
     useEffect(() => {
@@ -29,19 +29,19 @@ const NavBar = () => {
             <div className={nav ? ("hide-brand-name") : ("brand-name")}>get<span id="colored">linked</span></div>
             <div className="nav-items">
                 <ul className='desktop-nav' >
-                    <li><Link>Timeline</Link></li>
-                    <li><Link>Overview</Link></li>
-                    <li><Link>FAQs</Link></li>
-                    <li><Link to='/contact'>Contact</Link></li>
-                    <li><Link to='/register'>Register</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>Timeline</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>Overview</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>FAQs</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/contact'>Contact</Link></li>
+                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register'>Register</Link></li>
                 </ul>
                 {nav &&
                     <ul className='mobile-nav' >
-                        <li><Link>Timeline</Link></li>
-                        <li><Link>Overview</Link></li>
-                        <li><Link>FAQs</Link></li>
-                        <li><Link to='/contact'>Contact</Link></li>
-                        <li><Link to='/register'>Register</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>Timeline</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>Overview</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link>FAQs</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/contact'>Contact</Link></li>
+                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register'>Register</Link></li>
                     </ul>
                 }
             </div>
