@@ -1,7 +1,9 @@
 /* .boy-img {
     flex: 1;
 } */
-
+.home-container {
+    user-select: none;
+}
 .hero-container-wrapper {
     /* display: flex; */
     padding-left: 10vw;

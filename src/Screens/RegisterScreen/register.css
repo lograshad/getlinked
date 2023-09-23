@@ -8,6 +8,7 @@
     position: relative;
     background: #150E28;
     font-size: 32px;
+    user-select: none;
 }
 
 .register-container .navbar-container,
