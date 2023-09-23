@@ -24,17 +24,26 @@ export const registerUser = ({
     dispatch({
         type: REGISTER_USER_REQUEST,
     });
+    console.log(
+        email,
+        phone_number,
+        team_name,
+        group_size,
+        project_topic,
+        category,
+        privacy_poclicy_accepted
+    );
     try {
         const { data } = await Axios.post(`${BASE_URL}/hackathon/contact-form`, {
             email: `${email}`,
             phone_number: `${phone_number}`,
             team_name: `${team_name}`,
+            first_name: `${team_name}`,
             group_size: group_size,
             project_topic: `${project_topic}`,
             category: category,
             privacy_poclicy_accepted: privacy_poclicy_accepted,
         }, {
-            credentials: "include",
             headers: {
                 'Content-Type': 'application/json'
             },

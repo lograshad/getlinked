@@ -67,11 +67,10 @@ const ContactPage = () => {
                 <p>Questions or need assistance?</p>
                 <p>Let us know  about it!</p>
                 <p id='weird-text'>Email us below to any question related to our event</p>
-                <input placeHolder='First Name' onChange={(e) => { setFirst_name(e.target.value) }} />
-                <input placeHolder='Mail' onChange={(e) => { setEmail(e.target.value) }} />
-                <input placeHolder='Phone Number' onChange={(e) => { setPhone_number(e.target.value) }} />
-                <textarea placeHolder="Message" onChange={(e) => { setMessage(e.target.value) }} />
-                {/* input depends on backend */}
+                <input required placeHolder='First Name' onChange={(e) => { setFirst_name(e.target.value) }} />
+                <input required placeHolder='Mail' onChange={(e) => { setEmail(e.target.value) }} />
+                <input  required type='number' placeHolder='Phone Number' onChange={(e) => { setPhone_number(e.target.value) }} />
+                <textarea required placeHolder="Message" onChange={(e) => { setMessage(e.target.value) }} />
                 <button onClick={handleSubmit}>Submit</button>
             </div>
             <p className="socials-mobile-view">

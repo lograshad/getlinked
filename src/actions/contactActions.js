@@ -13,6 +13,9 @@ export const submitContactForm = ({ email, phone_number, first_name, message }) 
     dispatch({
         type: SUBMIT_FORM_REQUEST,
     });
+    console.log(
+        { email, phone_number, first_name, message }
+    );
     try {
         const { data } = await Axios.post(`${BASE_URL}/hackathon/contact-form`, {
             email: `${email}`,
@@ -20,7 +23,6 @@ export const submitContactForm = ({ email, phone_number, first_name, message }) 
             first_name: `${first_name}`,
             message: `${message}`,
         }, {
-            credentials: "include",
             headers: {
                 'Content-Type': 'application/json'
             },
