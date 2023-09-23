@@ -36,5 +36,4 @@ reportWebVitals();
 // page load on image download
 // fix text area
 // fix boy filter
-// add read me
 // fix text area text color

@@ -28,7 +28,19 @@ import winwise from "../../images/winwise.png";
 import wisper from "../../images/wisper.png";
 import matrix from "../../images/matrix.png";
 import Privacy from "../../components/privacy-stn/privacy";
+import { gsap } from "gsap";
+import { useEffect } from "react";
 const Home = ({ updateCurse, updateLeave }) => {
+    useEffect(()=> {
+        gsap.to(".glow-ball-img-wrapper", {
+            scale: 1.15,
+            duration: .5,
+            ease: "power2.inOut",
+            repeat: -1,
+            yoyo: true,
+            repeatRefresh: true,
+        })
+    })
     return (
         <div className="home-container">
             <NavBar
