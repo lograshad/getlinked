@@ -26,7 +26,6 @@ reportWebVitals();
 // image masking
 // animate stars yoyo
 // svgs responsiveness
-// add music
 // press a key anywhere to contact
 // add ellipse to that babes head and remove the second one
 // carefully crosscheck one by one

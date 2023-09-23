@@ -2,14 +2,14 @@ import "./navbar.css";
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-const NavBar = ({updateCurse, updateLeave}) => {
+const NavBar = ({ updateCurse, updateLeave }) => {
     const [nav, showNav] = useState(false);
     // useEffect to check resize
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 890) {
                 showNav(false);
-            } else if(window.innerWidth >= 891) {
+            } else if (window.innerWidth >= 891) {
                 showNav(true);
             }
         }
@@ -29,19 +29,72 @@ const NavBar = ({updateCurse, updateLeave}) => {
             <div className={nav ? ("hide-brand-name") : ("brand-name")}>get<span id="colored">linked</span></div>
             <div className="nav-items">
                 <ul className='desktop-nav' >
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">Timeline</Link></li>
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">Overview</Link></li>
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">FAQs</Link></li>
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/contact' className="exclude-from-animation">Contact</Link></li>
-                    <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register' className="exclude-from-animation">Register</Link></li>
+                    <li
+                        onMouseOver={updateCurse}
+                        onMouseLeave={updateLeave}
+                        onClick={updateLeave}
+                    >
+                        <Link className="exclude-from-animation">Timeline</Link>
+                    </li>
+                    <li
+                        onMouseOver={updateCurse}
+                        onMouseLeave={updateLeave}
+                        onClick={updateLeave}
+                    >
+                        <Link className="exclude-from-animation">Overview</Link>
+                    </li>
+                    <li
+                        onMouseOver={updateCurse}
+                        onMouseLeave={updateLeave}
+                        onClick={updateLeave}
+                    >
+                        <Link className="exclude-from-animation">FAQs</Link>
+                    </li>
+                    <li id="contact-btn"
+                        onMouseOver={updateCurse}
+                        onMouseLeave={updateLeave}
+                        onClick={updateLeave}>
+                        <Link to='/contact' className="exclude-from-animation">Contact</Link>
+                    </li>
+                    <li id="register-btn"
+                        onMouseOver={updateCurse}
+                        onMouseLeave={updateLeave}
+                        onClick={updateLeave}>
+                        <Link to='/register' className="exclude-from-animation">Register</Link>
+                    </li>
                 </ul>
                 {nav &&
                     <ul className='mobile-nav' >
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">Timeline</Link></li>
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">Overview</Link></li>
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link className="exclude-from-animation">FAQs</Link></li>
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/contact' className="exclude-from-animation">Contact</Link></li>
-                        <li onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register' className="exclude-from-animation">Register</Link></li>
+                        <li
+                            onMouseOver={updateCurse}
+                            onMouseLeave={updateLeave}
+                            onClick={updateLeave}>
+                            <Link className="exclude-from-animation">Timeline</Link>
+                        </li>
+                        <li
+                            onMouseOver={updateCurse}
+                            onMouseLeave={updateLeave}
+                            onClick={updateLeave}>
+                            <Link className="exclude-from-animation">Overview</Link>
+                        </li>
+                        <li
+                            onMouseOver={updateCurse}
+                            onMouseLeave={updateLeave}
+                            onClick={updateLeave}>
+                            <Link className="exclude-from-animation">FAQs</Link>
+                        </li>
+                        <li id="contact-btn"
+                            onMouseOver={updateCurse}
+                            onMouseLeave={updateLeave}
+                            onClick={updateLeave}>
+                            <Link to='/contact' className="exclude-from-animation">Contact</Link>
+                        </li>
+                        <li id="register-btn"
+                            onMouseOver={updateCurse}
+                            onMouseLeave={updateLeave}
+                            onClick={updateLeave}>
+                            <Link to='/register' className="exclude-from-animation">Register</Link>
+                        </li>
                     </ul>
                 }
             </div>

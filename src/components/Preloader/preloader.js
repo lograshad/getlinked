@@ -11,10 +11,15 @@ class Preloader extends Component {
     }
 
     componentDidMount() {
-        window.onload = () => {
-            // hiding the preloader after component mounts
+        // Add an event listener to the 'load' event of the window
+        window.addEventListener('load', () => {
+            // Hide the preloader when the window is fully loaded
             this.setState({ isLoading: false });
-        };
+        });
+    }
+    componentWillUnmount() {
+        // Remove the event listener when the component is unmounted
+        window.removeEventListener('load', () => {});
     }
 
     render() {

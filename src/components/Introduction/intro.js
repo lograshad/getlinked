@@ -6,10 +6,10 @@ import arrow from "../../images/arrow.svg";
 const Intro = () => {
     return (
         <section className="introduction-container">
-            <div className="svgs" id="star4"><img src={star4} alt="star" /></div>
-            <div className="svgs" id="star5"><img src={star5} alt="star" /></div>
-            <div className="svgs" id="arrow"><img src={arrow} alt="curved arrow" /></div>
-            <div className="bulb-img"><img src={bigIdea} alt="idea illustration" /><div className="bulb-text">The Big Idea</div></div>
+            <div className="svgs" id="star4"><img loading="lazy" src={star4} alt="star" /></div>
+            <div className="svgs" id="star5"><img loading="lazy" src={star5} alt="star" /></div>
+            <div className="svgs" id="arrow"><img loading="lazy" src={arrow} alt="curved arrow" /></div>
+            <div className="bulb-img"><img loading="lazy" src={bigIdea} alt="idea illustration" /><div className="bulb-text">The Big Idea</div></div>
             <div className="text-section">
                 <h3>Introduction to getlinked</h3>
                 <h3>tech Hackathon 1.0</h3>

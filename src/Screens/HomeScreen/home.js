@@ -28,6 +28,7 @@ import winwise from "../../images/winwise.png";
 import wisper from "../../images/wisper.png";
 import matrix from "../../images/matrix.png";
 import Privacy from "../../components/privacy-stn/privacy";
+import ScrollToTopButton from "../../components/ScrollToTop/scroll";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 const Home = ({ updateCurse, updateLeave }) => {
@@ -50,24 +51,24 @@ const Home = ({ updateCurse, updateLeave }) => {
             />
             <div className="hero-container-wrapper">
                 <div className="purpleLens1">
-                    <img src={purpleLens} alt="purple lens" />
+                    <img loading="lazy" src={purpleLens} alt="purple lens" />
                 </div>
                 <div className="purpleLens2">
-                    <img src={purpleLens2} alt="purple lens" />
+                    <img loading="lazy" src={purpleLens2} alt="purple lens" />
                 </div>
-                <div className="star" id="star1"><img src={star1} alt="sparkling star" /></div>
-                <div className="star" id="star2"><img src={star2} alt="sparkling star" /></div>
-                <div className="star" id="star3"><img src={star2} alt="sparkling star" /></div>
+                <div className="star" id="star1"><img loading="lazy" src={star1} alt="sparkling star" /></div>
+                <div className="star" id="star2"><img loading="lazy" src={star2} alt="sparkling star" /></div>
+                <div className="star" id="star3"><img loading="lazy" src={star2} alt="sparkling star" /></div>
                 <div className="hero-container">
                     <div className="top-text">Igniting a Revolution in HR Innovation <span>
-                        <img src={Vector4} alt="purple line" />
+                        <img loading="lazy" src={Vector4} alt="purple line" />
                     </span></div>
                     <div className="hero-stn-text">
                         <h2>getlinked Tech<div id="bulb">
-                            <img src={bulb} alt="light bulb" />
+                            <img loading="lazy" src={bulb} alt="light bulb" />
                         </div></h2>
                         <h2>Hackathon <span id="colored">1.0</span><div className="emojis">
-                            <span><img src={chain} alt="chain emoji" /></span><span><img src={spark} alt="spark emoji" /></span>
+                            <span><img loading="lazy" src={chain} alt="chain emoji" /></span><span><img loading="lazy" src={spark} alt="spark emoji" /></span>
                         </div></h2>
                         <p>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
                         <div className="button" onMouseOver={updateCurse} onMouseLeave={updateLeave} onClick={updateLeave}><Link to='/register'>Register</Link></div>
@@ -79,13 +80,13 @@ const Home = ({ updateCurse, updateLeave }) => {
                     </div>
                     <div className="boy-img">
                         <div className="matrix-img-wrapper">
-                            <img src={matrix} alt="matrix" />
+                            <img loading="lazy" src={matrix} alt="matrix" />
                         </div>
                         <div className="boy-img-wrapper">
-                            <img src={boy} alt="boy wearing cool glasses" />
+                            <img loading="lazy" src={boy} alt="boy wearing cool glasses" />
                         </div>
                         <div className="glow-ball-img-wrapper">
-                            <img src={glowball} alt="shining ball" />
+                            <img loading="lazy" src={glowball} alt="shining ball" />
                         </div>
                     </div>
                 </div>
@@ -99,10 +100,10 @@ const Home = ({ updateCurse, updateLeave }) => {
             <Sponsor />
             <Privacy />
             <footer>
-                <div className="stars star29"><img src={star1} alt="star" /></div>
-                <div className="stars star30"><img src={star2} alt="star" /></div>
-                <div className="stars star31"><img src={star4} alt="star" /></div>
-                <div className="stars star32"><img src={star1} alt="star" /></div>
+                <div className="stars star29"><img loading="lazy" src={star1} alt="star" /></div>
+                <div className="stars star30"><img loading="lazy" src={star2} alt="star" /></div>
+                <div className="stars star31"><img loading="lazy" src={star4} alt="star" /></div>
+                <div className="stars star32"><img loading="lazy" src={star1} alt="star" /></div>
                 <div className="one">
                     <h2>get<span>linked</span></h2>
                     <p>
@@ -172,6 +173,7 @@ const Home = ({ updateCurse, updateLeave }) => {
                 </div>
                 <p className="child-footer">All rights reserved. © getlinked Ltd.</p>
             </footer>
+            <ScrollToTopButton/>
         </div>
     );
 }

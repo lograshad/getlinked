@@ -10,7 +10,17 @@
     font-size: 32px;
     user-select: none;
 }
-
+.register-container #contact-btn {
+    background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.register-container #register-btn {
+    border: 1px solid transparent;
+    border-image: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    border-image-slice: 1;
+}
 .register-container .navbar-container,
 .register-container .navbar-container2 {
     position: absolute;

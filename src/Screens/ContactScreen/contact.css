@@ -26,6 +26,13 @@
     border-bottom: none;
 }
 
+#contact-container #contact-btn {
+    background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .stars,
 .flares {
     position: absolute;
@@ -194,11 +201,13 @@
     font-weight: 600;
     line-height: normal;
 }
+
 .socials-mobile-view,
 #weird-text,
 .back-button {
     display: none;
 }
+
 /* mobile view */
 @media (max-width: 890px) {
     #contact-container {
@@ -252,6 +261,7 @@
         align-items: center;
         gap: .3em;
     }
+
     .back-button {
         display: block;
         position: absolute;

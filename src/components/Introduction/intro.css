@@ -76,12 +76,61 @@
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 1.3em;
     font-style: normal;
     font-weight: 700;
     line-height: 122.5%;
     max-width: 10%;
     position: absolute;
     top: 47%;
-    left: 26.5%;
+    left: 27vw;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1080px) {
+    .introduction-container .bulb-img .bulb-text{
+        font-size: 1em;
+        left: 25vw;
+    }
+}
+
+@media (max-width: 1023px) {
+    .introduction-container .bulb-img .bulb-text{
+        font-size: 2em;
+        left: 52vw;
+        top: 35%;
+        max-width: 20%;
+    }
+    #arrow {
+        top: 40rem;
+        left: 47%;
+    }
+}
+@media (max-width: 920px) {
+    .introduction-container .bulb-img .bulb-text{
+        font-size: 2em;
+        left: 52vw;
+        top: 35%;
+        max-width: 20%;
+    }
+    #arrow {
+        top: 65vw;
+        left: 47%;
+    }
+}
+@media (max-width: 650px) {
+    .introduction-container .bulb-img .bulb-text{
+        font-size: 1.2em;
+        left: 52vw;
+        top: 30%;
+        max-width: 20%;
+    }
+}
+@media (max-width: 450px) {
+    .introduction-container .bulb-img .bulb-text{
+        font-size: .8em;
+        left: 52vw;
+        top: 25%;
+        max-width: 20%;
+    }
 }
