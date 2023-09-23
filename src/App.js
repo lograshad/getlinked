@@ -16,6 +16,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Cursor from "./components/Cursor/cursor";
 import { useState } from 'react';
 import Lenis from '@studio-freight/lenis';
+import Preloader from './components/Preloader/preloader';
 
 function App() {
   // handling the cursor interaction with links, across all components
@@ -48,7 +49,7 @@ function App() {
         }
       >
         <Route index element={
-          <Home
+          <Preloader
             updateCurse={updateCurse}
             updateLeave={updateLeave}
             // update curse and update leave are props handling animated cursor interactivity
