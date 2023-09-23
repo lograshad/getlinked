@@ -1,4 +1,11 @@
 import NavBar from "../../components/navbar/navbar";
+import Intro from "../../components/Introduction/intro";
+import Rules from "../../components/rules/rules";
+import Key from "../../components/key-attr/key-atrr";
+import Faqs from "../../components/FAQs/faqs";
+import Timeline from "../../components/timeline/timeline";
+import Prizestn from "../../components/prizeSection/prize";
+import Sponsor from "../../components/sponsor-stn/sponsor";
 import "./home.css";
 import { Link } from 'react-router-dom'
 import boy from "../../images/boy.png";
@@ -7,13 +14,11 @@ import purpleLens from "../../images/purpleLens.png";
 import purpleLens2 from "../../images/purpleLens2.png";
 import chain from "../../images/chain.png";
 import spark from "../../images/spark.png";
-import woman from "../../images/woman.png";
 import Vector4 from "../../images/Vector 4.svg";
 import bulb from "../../images/bulb.svg";
 import star1 from "../../images/star1.svg";
 import star2 from "../../images/star2.svg";
 import star3 from "../../images/star3.svg";
-import arrow from "../../images/arrow.svg";
 import star4 from "../../images/star4.svg";
 import star5 from "../../images/star5.svg";
 import star7 from "../../images/star7.svg";
@@ -21,29 +26,14 @@ import star6 from "../../images/star6.svg";
 import star8 from "../../images/star8.png";
 import star9 from "../../images/star9.png";
 import star10 from "../../images/star10.png";
-import manthinking from "../../images/manthinking.png";
-import manandwoman from "../../images/manandwoman.png";
-import goldmedal from "../../images/goldmedal.png";
-import silvermedal from "../../images/silvermedal.png";
-import bronzemedal from "../../images/bronzemedal.png";
-import trophy from "../../images/trophy.png";
-import purpleflare3 from "../../images/purpleflare3.svg";
-import purpleflare4 from "../../images/purpleflare4.svg";
-import purpleflare5 from "../../images/purpleflare5.png";
-import purpleflare6 from "../../images/purpleflare6.png";
-import purpleflare7 from "../../images/purpleflare7.png";
-import purpleflare8 from "../../images/purpleflare8.png";
 import purpleflare9 from "../../images/purpleflare9.png";
 import purpleflare10 from "../../images/purpleflare10.png";
-import purpleflare11 from "../../images/purpleflare11.png";
 import libertyassured from "../../images/libertyassured.png";
 import libertypay from "../../images/libertypay.png";
 import winwise from "../../images/winwise.png";
 import wisper from "../../images/wisper.png";
-import boyunlock from "../../images/boyunlock.png";
-import bigIdea from "../../images/bigIdea.svg";
 import matrix from "../../images/matrix.png";
-
+import Privacy from "../../components/privacy-stn/privacy";
 const Home = () => {
     return (
         <div className="home-container">
@@ -90,309 +80,14 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <section className="introduction-container">
-                <div className="svgs" id="star4"><img src={star4} alt="star" /></div>
-                <div className="svgs" id="star5"><img src={star5} alt="star" /></div>
-                <div className="svgs" id="arrow"><img src={arrow} alt="curved arrow" /></div>
-                <div className="bulb-img"><img src={bigIdea} alt="idea illustration" /><div className="bulb-text">The Big Idea</div></div>
-                <div className="text-section">
-                    <h3>Introduction to getlinked</h3>
-                    <h3>tech Hackathon 1.0</h3>
-                    <p>
-                        Our tech hackathon is a melting pot of visionaries, and its purpose is as
-                        clear as day: to shape the future. Whether you're a coding genius, a
-                        design maverick, or a concept wizard, you'll have the chance to transform
-                        your ideas into reality. Solving real-world problems, pushing the boundaries
-                        of technology, and creating solutions that can change the world,
-                        that's what we're all about!
-                    </p>
-                </div>
-            </section>
-            <section className="rules-container">
-                <div className="flares" id="flare3"><img src={purpleflare3} alt="purple flare" /></div>
-                <div className="flares" id="flare4"><img src={purpleflare4} alt="purple flare" /></div>
-                <div className="stars" id="star6"><img src={star2} alt="star" /></div>
-                <div className="stars" id="star7"><img src={star1} alt="star" /></div>
-                <div className="text-stn">
-                    <h3>Rules and</h3>
-                    <h3>Guidelines</h3>
-                    <p>
-                        Our tech hackathon is a melting pot of visionaries, and its purpose is as
-                        clear as day: to shape the future. Whether you're a coding genius, a
-                        design maverick, or a concept wizard, you'll have the chance to transform
-                        your ideas into reality. Solving real-world problems, pushing the boundaries
-                        of technology, and creating solutions that can change the world,
-                        that's what we're all about!
-                    </p>
-                </div>
-                <div className="rules-img-wrapper">
-                    <img src={woman} alt="woman being productive" />
-                    <div className="svg-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="134" height="134" viewBox="0 0 134 134" fill="none">
-                            <circle cx="67" cy="67" r="67" fill="url(#paint0_linear_65_65)" />
-                            <defs>
-                                <linearGradient id="paint0_linear_65_65" x1="134" y1="67" x2="3.69183" y2="67" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#8F01FE" />
-                                    <stop offset="1" stop-color="#FF2674" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </div>
-            </section>
-            <section className="key-attr-container">
-                <div className="stars" id="star8"><img src={star5} alt="shining star" /></div>
-                <div className="stars" id="star9"><img src={star2} alt="shining star" /></div>
-                <div className="stars" id="star10"><img src={star1} alt="shining star" /></div>
-                <div className="flares" id="flare5"><img src={purpleflare5} alt="purple flare" /></div>
-                <div className="flares" id="flare6"><img src={purpleflare6} alt="purple flare" /></div>
-                <div className="illustration"><img src={manandwoman} alt="man and woman planning" /></div>
-                <div className="text-stn">
-                    <div className="h3">
-                        <h3>Judging Criteria</h3>
-                        <h3>Key attributes</h3>
-                    </div>
-                    <article>
-                        <p><span>Innovation and Creativity:</span> Evaluate the uniqueness and creativity of the solution. Consider whether it addresses a real-world problem in a novel way or introduces innovative features.</p>
-                        <p><span>Functionality:</span> Assess how well the solution works. Does it perform its intended functions effectively and without major issues? Judges would consider the completeness and robustness of the solution.</p>
-                        <p><span>Impact and Relevance:</span> Determine the potential impact of the solution in the real world. Does it address a significant problem, and is it relevant to the target audience? Judges would assess the potential social, economic, or environmental benefits.</p>
-                        <p><span>Technical Complexity:</span> Evaluate the technical sophistication of the solution. Judges would consider the complexity of the code, the use of advanced technologies or algorithms, and the scalability of the solution.</p>
-                        <p><span>Adherence to Hackathon Rules:</span> Judges will Ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any other competition-specific requirements.</p>
-                    </article>
-                    <button>Read More</button>
-                </div>
-            </section>
-            <section className="FAQs-stn">
-                <div className="stars"><img src={star5} alt="shining star" /></div>
-                <div className="stars"><img src={star4} alt="shining star" /></div>
-                <div className="stars"><img src={star4} alt="shining star" /></div>
-                <div className="stars"><img src={star2} alt="shining star" /></div>
-                <div className="stars"><img src={star1} alt="shining star" /></div>
-                <div className="text-stn">
-                    <div className="h3">
-                        <h3>Frequently Asked</h3>
-                        <h3>Question</h3>
-                    </div>
-                    <p id="answers">
-                        We got answers to the questions that you might
-                        want to ask about getlinked Hackathon 1.0
-                    </p>
-                    <div className="faqs">
-                        <p><span>Can I work on a project I started before the hackathon?</span><span>+</span></p>
-                        <p><span>What happens if I need help during the hackathon?</span><span>+</span></p>
-                        <p><span>What happens if I don't have an idea for a project?</span><span>+</span></p>
-                        <p><span>Can I join a team or do I have to come with one?</span><span>+</span></p>
-                        <p><span>What happens after the hackathon ends</span><span>+</span></p>
-                        <p><span>Can I work on a project I started before the hackathon?</span><span>+</span></p>
-                    </div>
-                </div>
-                <div className="illustration">
-                    <div className="question-marks">?</div>
-                    <div className="question-marks">?</div>
-                    <div className="question-marks">?</div>
-                    <img src={manthinking} alt="man thinking" />
-                </div>
-            </section>
-            <section className="timeline-container">
-                <div className="stars star11"><img src={star5} alt="star" /></div>
-                <div className="stars star12"><img src={star1} alt="star" /></div>
-                <div className="stars star13"><img src={star2} alt="star" /></div>
-                <h3>Timeline</h3>
-                <p className="description">Here is the breakdown of the time we anticipate using for the upcoming event.</p>
-                <div className="tl" id="tl1">
-                    <div className="dets">
-                        <h4>Hackathon Announcement</h4>
-                        <p>The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register</p>
-                    </div>
-                    <div className="dates">November 18, 2023</div>
-                    <div className="indicator">
-                        1
-                    </div>
-                </div>
-                <div className="tl" id="tl2">
-                    <div className="dets">
-                        <h4>Teams Registration begins</h4>
-                        <p>Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register</p>
-                    </div>
-                    <div className="dates">November 18, 2023</div>
-                    <div className="indicator">
-                        2
-                    </div>
-                </div>
-                <div className="tl" id="tl3">
-                    <div className="dets">
-                        <h4>Teams Registration ends</h4>
-                        <p>Interested Participants are no longer Allowed to register</p>
-                    </div>
-                    <div className="dates">November 18, 2023</div>
-                    <div className="indicator">
-                        3
-                    </div>
-                </div>
-                <div className="tl" id="tl4">
-                    <div className="dets">
-                        <h4>Announcement of the accepted teams and ideas</h4>
-                        <p>All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are formally announced</p>
-                    </div>
-                    <div className="dates">November 18, 2023</div>
-                    <div className="indicator">
-                        4
-                    </div>
-                </div>
-                <div className="tl" id="tl5">
-                    <div className="dets">
-                        <h4>Getlinked Hackathon 1.0 Offically Begins</h4>
-                        <p>Accepted teams can now proceed to build their ground breaking skill driven solutions</p>
-                    </div>
-                    <div className="dates">November 18, 2023</div>
-                    <div className="indicator">
-                        5
-                    </div>
-                </div>
-                <div className="tl" id="tl6">
-                    <div className="dets">
-                        <h4>Demo Day</h4>
-                        <p>Teams get the opportunity to pitch their projects to judges. The winner of the hackathon will also be announced on this day</p>
-                    </div>
-                    <div className="dates">November 18, 2023</div>
-                    <div className="indicator">
-                        6
-                    </div>
-                </div>
-            </section>
-            <section className="prize-stn-container">
-                <div className="flares flare7"><img src={purpleflare7} alt="purple flare" /></div>
-                <div className="flares flare8"><img src={purpleflare8} alt="purple flare" /></div>
-                <div className="stars star13"><img src={star4} alt="" /></div>
-                <div className="stars star14"><img src={star4} alt="" /></div>
-                <div className="stars star15"><img src={star1} alt="" /></div>
-                <div className="stars star16"><img src={star1} alt="" /></div>
-                <div className="stars star17"><img src={star1} alt="" /></div>
-                <div className="stars star18"><img src={star2} alt="" /></div>
-                <section className="prize-stn">
-                    <div className="text-stn">
-                        <h3>Prizes and</h3>
-                        <h3>Rewards</h3>
-                        <p>Highlight of the prizes or rewards for winners and for participants.</p>
-                    </div>
-                    <div className="illustration1"><img src={trophy} alt="trophy" /></div>
-                    <div className="illustration2-container">
-                        <div className="rewards">
-                            <div className="medal-wrapper">
-                                <img src={silvermedal} alt="silver medal" />
-                            </div>
-                            <div className="position">2nd</div>
-                            <div className="status">Runner</div>
-                            <div className="prize">N300,000</div>
-                        </div>
-                        <div className="rewards">
-                            <div className="medal-wrapper">
-                                <img src={goldmedal} alt="gold medal" />
-                            </div>
-                            <div className="position">1st</div>
-                            <div className="status">Runner</div>
-                            <div className="prize">N400,000</div>
-                        </div>
-                        <div className="rewards">
-                            <div className="medal-wrapper">
-                                <img src={bronzemedal} alt="bronze medal" />
-                            </div>
-                            <div className="position">3rd</div>
-                            <div className="status">Runner</div>
-                            <div className="prize">N150,000</div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section className="sponsors-stn">
-                <div className="stars star19"><img src={star4} alt="star" /></div>
-                <div className="stars star20"><img src={star4} alt="star" /></div>
-                <div className="stars star21"><img src={star1} alt="star" /></div>
-                <div className="flares flare1"><img src={purpleflare9} alt="" /></div>
-                <div className="flares flare2"><img src={purpleflare10} alt="" /></div>
-                <h3>Partners and Sponsors</h3>
-                <p>Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
-                <div className="sponsors-container">
-                    <div className="container-content">
-                        <div className="top">
-                            <div className="img-wrapper"><img src={libertyassured} alt="libertya ssured logo" /></div>
-                            <div className="img-wrapper"><img src={libertypay} alt="liberty pay logo" /></div>
-                            <div className="img-wrapper"><img src={winwise} alt="winwise logo" /></div>
-                        </div>
-                        <div id="lines"></div>
-                        <div id="lines"></div>
-                        <div id="lines"></div>
-                        <div className="bottom">
-                            <div className="img-wrapper"><img src={wisper} alt="whisperms logo" /></div>
-                            <div className="img-wrapper weirdos">pay<span>box</span></div>
-                            <div className="img-wrapper weirdos">Vuzual <span>Plus</span><div>design studios</div></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="privacy-stn">
-                <div className="stars star22"><img src={star2} alt="star" /></div>
-                <div className="stars star23"><img src={star5} alt="star" /></div>
-                <div className="stars star24"><img src={star1} alt="star" /></div>
-                <div className="stars star25"><img src={star5} alt="star" /></div>
-                <div className="stars star26"><img src={star1} alt="star" /></div>
-                <div className="stars star27"><img src={star4} alt="star" /></div>
-                <div className="stars star28"><img src={star2} alt="star" /></div>
-                <div className="flares"><img src={purpleflare11} alt=" purple flare" /></div>
-                <div className="text-stn">
-                    <h3>Privacy Policy and</h3>
-                    <h3>Terms</h3>
-                    <p id="p1">Last updated on September 12, 2023</p>
-                    <p id="p2">Below are our privacy & policy, which outline a lot of goodies. It’s our aim to always take of our participant</p>
-                    <div className="termsNpolicy">
-                        <p>
-                            At getlinked tech Hackathon 1.0, we value your privacy
-                            and are committed to protecting your personal information.
-                            This Privacy Policy outlines how we collect, use, disclose,
-                            and safeguard your data when you participate in our tech
-                            hackathon event. By participating in our event, you consent
-                            to the practices described in this policy.
-                        </p>
-                        <p>Licensing Policy</p>
-                        <p>Here are terms of our Standard License:</p>
-                        <div className="terms">
-                            <div className="svg-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                                    <circle cx="8.5" cy="8.5" r="8.5" fill="#2DE100" />
-                                    <path d="M5 8L7 10.5L13.5 6" stroke="white" stroke-width="2" />
-                                </svg>
-                            </div>
-                            <p>The Standard License grants you a non-exclusive right to navigate and register for our event</p>
-                        </div>
-                        <div className="terms">
-                            <div className="svg-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                                    <circle cx="8.5" cy="8.5" r="8.5" fill="#2DE100" />
-                                    <path d="M5 8L7 10.5L13.5 6" stroke="white" stroke-width="2" />
-                                </svg>
-                            </div>
-                            <p>You are licensed to use the item available at any free source sites, for your project developement</p>
-                        </div>
-                        <button>Read More</button>
-                    </div>
-                </div>
-                <div className="illustration">
-                    <div className="svg-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 530 648" fill="none">
-                            <path d="M264.871 589.574L265 589.608L265.129 589.574C320.476 574.81 372.093 534.519 409.868 482.021C447.645 429.521 471.611 364.768 471.611 301.025V156.109V155.785L471.315 155.652L265.204 63.7542L265 63.6635L264.796 63.7542L58.6853 155.652L58.3889 155.785V156.109V301.025C58.3889 364.768 82.3555 429.521 120.132 482.021C157.907 534.519 209.524 574.81 264.871 589.574ZM346.944 294.545V295.045H347.444C356.113 295.045 364.822 299.385 371.373 306.303C377.921 313.217 382.278 322.671 382.278 332.836V435.927C382.278 444.599 377.939 453.311 371.024 459.864C364.112 466.415 354.662 470.773 344.5 470.773H182.556C173.887 470.773 165.178 466.433 158.627 459.515C152.079 452.601 147.722 443.148 147.722 432.982V329.891C147.722 321.217 152.063 312.501 158.618 305.944C165.172 299.387 173.885 295.045 182.556 295.045H183.056V294.545V250.364C183.056 229.92 193.274 211.641 208.645 198.461C224.018 185.28 244.515 177.227 265 177.227C285.485 177.227 305.982 185.28 321.355 198.461C336.726 211.641 346.944 229.92 346.944 250.364V294.545ZM309.167 295.045H309.667V294.545V250.364C309.667 226.435 288.733 211.573 265 211.573C241.267 211.573 220.333 226.435 220.333 250.364V294.545V295.045H220.833H309.167ZM529.5 294.545C529.5 457.766 416.63 610.381 265 647.485C113.37 610.381 0.5 457.766 0.5 294.545V118.143L265 0.547189L529.5 118.143V294.545Z" fill="url(#paint0_linear_110_134)" fill-opacity="0.14" stroke="black" />
-                            <defs>
-                                <linearGradient id="paint0_linear_110_134" x1="265" y1="0" x2="265" y2="648" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#903AFF" />
-                                    <stop offset="1" stop-color="#FF26B9" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div className="img-wrapper">
-                        <img src={boyunlock} alt="boy on unlocked padlock" />
-                    </div>
-                </div>
-            </section>
+            <Intro/>
+            <Rules/>
+            <Key/>
+            <Faqs/>
+            <Timeline/>
+            <Prizestn/>
+            <Sponsor/>
+            <Privacy/>
             <footer>
                 <div className="stars star29"><img src={star1} alt="star" /></div>
                 <div className="stars star30"><img src={star2} alt="star" /></div>

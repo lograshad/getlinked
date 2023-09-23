@@ -1,0 +1,89 @@
+/* introduction section */
+.introduction-container {
+    display: flex;
+    align-items: center;
+    padding-top: 4rem;
+    padding-left: 13vw;
+    padding-right: 8.5vw;
+    padding-bottom: 4rem;
+    gap: 9vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 50px;
+    z-index: 9;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+.svgs {
+    position: absolute;
+}
+
+.svgs img {
+    height: 100%;
+    width: 100%;
+}
+
+#star4 {
+    top: 223px;
+    left: 12%;
+}
+
+#star5 {
+    top: 180px;
+    right: 8%;
+    width: 1.5rem;
+}
+
+#arrow {
+    top: 25rem;
+    left: 45%;
+    /* width: 1.5rem; */
+}
+
+.introduction-container .text-section {
+    margin-bottom: -3rem;
+}
+
+.introduction-container .text-section h3 {
+    font-family: 'ClashDisplay';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+}
+
+.introduction-container .text-section h3:nth-child(2) {
+    color: var(--secondary-color);
+}
+
+.introduction-container .text-section p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27.5px;
+}
+
+.introduction-container .bulb-img {
+    width: 140vw;
+}
+
+.introduction-container .bulb-img img {
+    width: 100%;
+}
+
+.introduction-container .bulb-img .bulb-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 122.5%;
+    max-width: 10%;
+    position: absolute;
+    top: 47%;
+    left: 26.5%;
+    /* 29.4px */
+}

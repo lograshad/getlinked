@@ -1,0 +1,204 @@
+/* privacy policy section */
+.privacy-stn {
+    position: relative;
+    padding: 0 12vw;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 10rem;
+    margin-top: 6rem;
+}
+
+.privacy-stn .stars,
+.privacy-stn .flares {
+    position: absolute;
+}
+
+.privacy-stn .text-stn h3 {
+    color: #FFF;
+    font-family: 'ClashDisplay';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.privacy-stn .text-stn h3:nth-child(2) {
+    color: #D434FE;
+}
+
+.privacy-stn .text-stn #p1 {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27.5px;
+}
+
+.privacy-stn .text-stn #p2 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 188.4%;
+    margin-bottom: 4rem;
+}
+
+.privacy-stn .text-stn .termsNpolicy {
+    border-radius: 5px;
+    border: 1px solid #D434FE;
+    background: rgba(217, 217, 217, 0.03);
+    padding: 2rem 5vw;
+    max-width: 45vw;
+    min-width: 40vw;
+    position: relative;
+    z-index: 9;
+}
+
+.privacy-stn .text-stn .termsNpolicy p:nth-child(1) {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180.4%;
+}
+
+.privacy-stn .text-stn .termsNpolicy p:nth-child(2) {
+    color: #D434FE;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 216.4%;
+}
+
+.privacy-stn .text-stn .termsNpolicy p:nth-child(3) {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 216.4%;
+}
+
+.privacy-stn .text-stn .termsNpolicy .terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.privacy-stn .text-stn .termsNpolicy .terms p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170.4%;
+    margin-top: -2%;
+}
+
+.privacy-stn .text-stn button {
+    border-radius: 5px;
+    padding: 16px 32px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    background: var(--button-gradient-background-color);
+    /* text-align: center; */
+    margin: auto;
+    display: flex;
+}
+
+.privacy-stn .illustration {
+    position: relative;
+    margin-bottom: -15%;
+}
+
+.privacy-stn .illustration .svg-wrapper {
+    width: 30vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -18%;
+}
+
+.privacy-stn .illustration .img-wrapper {
+    position: relative;
+    z-index: 9;
+    width: 35vw;
+}
+
+.privacy-stn .illustration .img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.stars,
+.flares {
+    position: absolute;
+}
+
+.star22 {
+    top: 9.5rem;
+    left: 35vw;
+    width: 1.1rem;
+}
+
+.star23 {
+    left: 53vw;
+    top: 16rem;
+    width: 1rem;
+}
+
+.star24 {
+    right: 15vw;
+    top: 15rem;
+    width: .9rem;
+}
+
+.star25 {
+    left: 5vw;
+    bottom: 8rem;
+    width: 1.3rem;
+    z-index: 9;
+}
+
+.star26 {
+    right: 38vw;
+    bottom: 10rem;
+    width: .8rem;
+}
+
+.star27 {
+    right: 30vw;
+    bottom: 15rem;
+    width: .7rem;
+}
+
+.star28 {
+    right: 3vw;
+    bottom: 8rem;
+    width: 1.2rem;
+}
+
+.privacy-stn .flares {
+    left: 0;
+    bottom: -40%;
+    opacity: .6;
+    z-index: 4;
+}
+
+.stars img,
+.flares img {
+    width: 100%;
+    height: 100%;
+}

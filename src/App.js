@@ -13,8 +13,17 @@ import ContactPage from './Screens/ContactScreen/contact';
 import RegisterPage from './Screens/RegisterScreen/register';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import Cursor from "./components/Cursor/cursor";
+import { useState } from 'react';
 
 function App() {
+  const [curse, setCurse] = useState(false);
+  const updateCurse = () => {
+    setCurse(true);
+  }
+  const updateLeave = () => {
+    setCurse(false);
+  }
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route
@@ -23,7 +32,12 @@ function App() {
           <Root />
         }
       >
-        <Route index element={<Home />} />
+        <Route index element={
+          <Home
+            updateCurse={updateCurse}
+            updateLeave={updateLeave}
+          />
+        } />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/register' element={<RegisterPage />} />
       </Route>
@@ -31,6 +45,7 @@ function App() {
   )
   return (
     <div className="App">
+      <Cursor curse={curse} />
       <RouterProvider router={router} />
     </div>
   );
